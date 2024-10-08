@@ -15,7 +15,7 @@ const server = http.createServer((req, res)=> {
         res.end('<h1>About meow meowwwwwww</h1>');
     } else if(req.url == '/home') {
         res.statusCode = 200;
-        const filePath = path.join(__dirname, 'temp.html');
+        const filePath = path.join(__dirname, 'Home.html');
         console.log(`File path: ${filePath}`);  // Log the file path
 
         try {
